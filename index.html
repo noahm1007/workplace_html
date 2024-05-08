@@ -1,81 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scrollable Cards</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .card {
+        width: 100%;
+        background-color: #f0f0f0;
+        margin-bottom: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .card-header {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .rating {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .rating-label {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .description {
+        margin-top: 20px;
+    }
+    /* Optional: Customize scrollbar */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888; 
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+</style>
+</head>
 <body>
-
-<h2>Weekly Pricing Scheme</h2>
-Notes:
-<ul>
-<li>Extras for each level include all preceding extras</li>
-<li>All prices and walks are in terms of price per week</li>
-<li>Non-subscription based walks not available at this time</li>
-<li>Cancelation is available anytime after first walk</li>
-
-</ul>
-<table style="width:70%">
-  <tr>
-    <th>Level</th>
-    <th>Walks</th> 
-    <th>Extras</th>
-    <th>Price</th>
-  </tr>
-  <tr> 
-    <td><i>Level 1</i></td>
-    <td>1</td>
-    <td>Personalized social media page for your dog</td>
-    <td>$11.99</td>
-  </tr>
-  <tr>
-    <td><i>Level 2</i></td>
-    <td>3</td>
-    <td>Free food delivery</td>
-    <td>$34.99</td>
-  </tr>
-  <tr>
-    <td><i>Level 3</i></td>
-    <td>5</td>
-    <td>Free dog treats provided after walk</td>
-    <td>$59.99</td>
-  </tr>
-  <tr>
-    <td><i>Level 4</i></td>
-    <td>7</td>
-    <td>Free dog toy each week</td>
-    <td>$79.99</td>
-  </tr>
-</table>
-
-  <p><strong>Add-ons:</strong> Want an additional service?</p>
-
-<table style="width:70%">
-  <tr>
-    <th>Add-on</th>
-    <th>Price</th> 
-  </tr>
-  <tr>
-    <td>Traditional Dog Food (10 lbs)</td>
-    <td>$16.99</td>
-  </tr>
-    <tr>
-    <td>Organic Premium Dog Food (10 lbs)</td>
-    <td>$24.99</td>
-  </tr>
-    <tr>
-    <td>Dog Food Delivery Fee</td>
-    <td>$3.99</td>
-  </tr>
-    <tr>
-    <td>Dog Toy</td>
-    <td>$4.50</td>
-  </tr>
-    <tr>
-    <td>Solo Walk (Per Walk)</td>
-    <td>$9.99</td>
-  </tr>
-  <tr>
-    <td>Dog Medicine Delivery</td>
-    <td>$7.99</td>
-  </tr>
-</table>
-
+<div class="container">
+    <!-- Repeat this card structure for each class -->
+    <div class="card">
+        <div class="card-header">Class Name</div>
+        <div class="rating">9.5</div>
+        <div class="rating-label">Rating 1: 8.5</div>
+        <div class="rating-label">Rating 2: 9.0</div>
+        <div class="rating-label">Rating 3: 9.8</div>
+        <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Aliquam suscipit malesuada massa id placerat. 
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        </div>
+    </div>
+    <!-- Repeat end -->
+</div>
 </body>
 </html>
